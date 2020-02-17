@@ -145,7 +145,7 @@ else if(PropFileUtil.getValueForKey("browser").equalsIgnoreCase("IE")){
 					snumber=d.findElement(By.linkText(locatorvalue)).getAttribute("value");
 				}
 			
-			FileWriter fw=new FileWriter("D:\\nagjt\\myprograms\\StocAccHybrid\\captureData\\supplier.txt");
+			FileWriter fw=new FileWriter("D:\\nagjt\\myprograms\\StocAccHybrid_Maven\\captureData\\supplier.txt");
 			BufferedWriter br=new BufferedWriter(fw);
 			br.write(snumber);
 			br.flush();

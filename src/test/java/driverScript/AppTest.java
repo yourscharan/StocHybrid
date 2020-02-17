@@ -12,7 +12,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import commnFuncs.CommFuncs;
+import commonFuncs.CommFuncs;
 import utilities.ExcelfileUtils;
 
 public class AppTest {
@@ -32,7 +32,7 @@ public class AppTest {
 			if(ex.getData("MasterTestCases", i, 2).equalsIgnoreCase("Y")){
 				
 				String TCmodule=ex.getData("MasterTestCases", i, 1);
-				report= new ExtentReports("D:\\nagjt\\myprograms\\StocAccHybrid\\Reports\\"+TCmodule+CommFuncs.generateDate()+".html");
+				report= new ExtentReports("D:\\nagjt\\myprograms\\StocAccHybrid_Maven\\Reports\\"+TCmodule+CommFuncs.generateDate()+".html");
 				for(int j=1;j<=ex.rowCount(TCmodule);j++){
 					
 					test=report.startTest(TCmodule);
